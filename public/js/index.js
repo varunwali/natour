@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const result = await axios({
         method: 'POST',
-        url: 'https://natoursdemotour.onrender.com/api/v1/users/login',
+        url: 'https://natour-production.up.railway.app/api/v1/users/login',
         data: {
           email,
           password

@@ -8,7 +8,7 @@
     "start:prod": "NODE_ENV=production nodemon server.js",
     "debug": "ndb server.js"
   },
-  "proxy":"https://natoursdemotour.onrender.com",
+  "proxy":"https://natour-production.up.railway.app/",
   "author": "Jonas Schmedtmann",
   "license": "ISC",
   "dependencies": {

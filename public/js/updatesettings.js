@@ -18,8 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
     try {
       const url =
         type === 'password'
-          ? 'https://natoursdemotour.onrender.com/api/v1/users/updateMyPassword'
-          : 'https://natoursdemotour.onrender.com/api/v1/users/updateMe';
+          ? 'https://natour-production.up.railway.app/api/v1/users/updateMyPassword'
+          : 'https://natour-production.up.railway.app/api/v1/users/updateMe';
 
       const res = await axios({
         method: 'PATCH',
