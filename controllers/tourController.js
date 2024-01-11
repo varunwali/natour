@@ -167,7 +167,7 @@ exports.getToursWithin = catchAsync(async (req, res, next) => {
     );
   }
 
-  const tours = await Tour.find({
+  const tours = await Tour.find.maxTimeMS(20000)({
     startLocation: { $geoWithin: { $centerSphere: [[lng, lat], radius] } }
   });
 
